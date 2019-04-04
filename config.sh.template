@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#Default config directory
+CONFIG_DIR='config'
+
+#email address from whom send report
+REPORT_EMAIL_FROM=''
+
+#recipients of reports
+REPORT_EMAIL_TO=''
+
+#optional SMS-inform via email-to-sms
+REPORT_SMS_TO=''
+REPORT_SMS_TXT=''
+REPORT_COMMAND=''
+
+#reports and log directorys
+REPORTS_DIR='reports'
+LOGS_DIR='logs'
+
+#options to compress dumped DB files
+COMPRESS_DB=true
+COMPRESS_BIN='gzip'
+COMPRESS_OPT='-9 -c'
+
+#report file template configuration
+REPORT_FILE=$(date "+%Y-%m-%dT%H%M%S")
+REPORT_FILE="report_$REPORT_FILE.txt"
+
+#default backup directory
+BK_PATHTOBACKUP='data'
+
+#remote replication options
+BK_REMOTEBACKUP=false
+BK_REMOTEBACKUPPATH='rdata'
+BK_REMOTEBACKUPCMD='rsync -azhH --delete-after --stats'
+
+#more information in log, on/off
+DO_DEBUG=false
