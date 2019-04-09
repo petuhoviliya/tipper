@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Simple and powerful backup script 
+# Original script author: Nikita CryptoManiac Sivakov <cryptomaniac.512@gmail.com>
+# https://github.com/sivakov512/tipper
+# 
+# New functionality and some improvements: Ilya Petukhov https://github.com/petuhoviliya/tipper
+#
+
 # It's a kind of magic
 export DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
