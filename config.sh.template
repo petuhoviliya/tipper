@@ -28,7 +28,7 @@ REPORT_FILE=$(date "+%Y-%m-%dT%H%M%S")
 REPORT_FILE="report_$REPORT_FILE.txt"
 
 #default backup directory
-BK_PATHTOBACKUP='data'
+BK_PATHTOBACKUP='/mnt/backup/data'
 
 #remote replication options
 BK_REMOTEBACKUP=false
